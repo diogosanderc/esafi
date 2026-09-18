@@ -148,7 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const emailInput = document.getElementById('info-email');
     const successBox = document.getElementById('info-modal-success');
     const closeBtn = document.getElementById('info-modal-close');
-    const cancelBtn = document.getElementById('info-modal-cancel');
     let lastFocused = null;
 
     const setError = (input, message) => {
@@ -186,13 +185,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     closeBtn.addEventListener('click', closeModal);
-    cancelBtn.addEventListener('click', closeModal);
-    infoModal.addEventListener('click', (e) => {
-      if (e.target === infoModal) closeModal();
-    });
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !infoModal.hidden) closeModal();
-    });
 
     phoneInput.addEventListener('input', () => {
       const digits = phoneInput.value.replace(/\D/g, '').slice(0, 11);
