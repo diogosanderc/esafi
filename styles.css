@@ -961,7 +961,7 @@ section { padding: var(--space-7) 0; position: relative; }
 }
 .countdown-unit-label {
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--gold);
 }
 
 @media (max-width: 640px) {
