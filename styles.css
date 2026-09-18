@@ -1032,6 +1032,16 @@ section { padding: var(--space-7) 0; position: relative; }
   box-shadow: 0 24px 56px -14px rgba(4, 23, 68, 0.7);
   z-index: 1;
 }
+.pricing-card--closed {
+  background: #33394a;
+  border-color: rgba(255, 255, 255, 0.08);
+  filter: grayscale(0.6);
+  opacity: 0.75;
+}
+.pricing-card--closed:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 16px 40px -12px rgba(4, 23, 68, 0.55);
+}
 .pricing-tag {
   align-self: flex-start;
   background: rgba(255, 255, 255, 0.12);
@@ -1239,6 +1249,7 @@ section { padding: var(--space-7) 0; position: relative; }
 }
 .pricing-banner--blue { background: linear-gradient(120deg, var(--surface-header), var(--surface-raised)); }
 .pricing-banner--gold { background: linear-gradient(120deg, #b8860b, var(--gold)); }
+.pricing-banner--gray { background: linear-gradient(120deg, #2b2f3a, #4a4f5c); }
 .pricing-banner .pricing-tag {
   background: none;
   padding: 0;
