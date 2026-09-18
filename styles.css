@@ -649,6 +649,7 @@ section { padding: var(--space-7) 0; position: relative; }
   text-align: left;
 }
 .faq-head-title { font-weight: 700; }
+.faq-item.is-open .faq-head-title { color: var(--gold); }
 .faq-item .schedule-chevron { background: rgba(255, 255, 255, 0.12); color: var(--ink); }
 .faq-head:hover .schedule-chevron { background: rgba(255, 255, 255, 0.22); }
 .faq-item.is-open .schedule-chevron { background: #588cff; color: var(--ink); }
