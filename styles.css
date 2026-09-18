@@ -1234,7 +1234,8 @@ section { padding: var(--space-7) 0; position: relative; }
   position: relative;
   overflow: hidden;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   min-height: 56px;
 }
 .pricing-banner::before {
@@ -1253,7 +1254,9 @@ section { padding: var(--space-7) 0; position: relative; }
 .pricing-banner .pricing-tag {
   background: none;
   padding: 0;
-  font-size: 12px;
+  font-size: 18px;
+  align-self: center;
+  text-align: center;
   position: relative;
   z-index: 1;
 }
